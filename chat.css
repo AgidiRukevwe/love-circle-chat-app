@@ -1,15 +1,16 @@
 body {
   padding: 0;
   margin: 0;
+  /* overflow: hidden; */
 }
 .container {
   height: 100%;
   width: 100%;
   background-color: rgb(237, 231, 232);
   display: flex;
+  justify-content: space-between;
 }
 .sidebar {
-  /* max-width: 800px; */
   flex: 0.3;
   min-height: 800px;
   background-color: white;
@@ -41,6 +42,51 @@ body {
   background-color: green;
   height: 10%;
   width: 100%;
+}
+.message_list {
+  position: relative;
+  margin: 5px;
+  width: 95%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* overflow-y: scroll;
+  scroll-behavior: auto; */
+  background-color: coral;
+}
+
+.message_list li {
+  position: relative;
+  list-style: none;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 10px;
+  width: 90%;
+  height: fit-content;
+  background-color: teal;
+  height: fit-content;
+}
+
+.message_list li div {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  /* background-color: indigo; */
+}
+
+.my_messages {
+  /* position: absolute; */
+  max-width: 30%;
+  text-align: right;
+  background-color: yellow;
+  right: 0;
+}
+
+.friend_messages {
+  position: absolute;
+  background-color: red;
+  right: 0;
 }
 
 .input__form {
